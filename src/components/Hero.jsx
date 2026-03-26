@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Code } from 'lucide-react';
 import profilePic from '../assets/hero_real.jpg';
-import resumePdf from '../assets/resume-v2.pdf';
+import resumePdf from '../assets/resume-v3.pdf';
 
 
 const words = ["Cloud Engineer", "Tech Enthusiast", "Problem Solver"];
