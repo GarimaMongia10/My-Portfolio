@@ -12,33 +12,33 @@ const Experience = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50, scale: 0.9 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
+    visible: {
+      opacity: 1,
+      y: 0,
       scale: 1,
-      transition: { duration: 0.8, type: "spring", stiffness: 100, damping: 12 } 
+      transition: { duration: 0.8, type: "spring", stiffness: 100, damping: 12 }
     }
   };
 
   return (
     <section id="experience" className="experience-section">
-      <motion.h2 
+      <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="section-title"
       >
-        Professional <span className="highlight">Experience</span>
+        Professional <span className="highlight">Training</span>
       </motion.h2>
-      
-      <motion.div 
+
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.2 }}
         style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}
       >
-        <motion.div 
+        <motion.div
           variants={itemVariants}
           whileHover={{ y: -8, transition: { type: 'spring', stiffness: 300 } }}
           className="card"
