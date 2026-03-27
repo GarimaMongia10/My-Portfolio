@@ -7,7 +7,7 @@ import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
-import './App.css'; 
+import './App.css';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,12 +29,12 @@ function App() {
         <div className="sidebar-header">
           <a href="#" className="logo">GM.</a>
         </div>
-        
+
         <nav className="sidebar-nav">
           <ul className="nav-links">
             <li><a href="#hero" onClick={() => setMenuOpen(false)}>HOME</a></li>
             <li><a href="#skills" onClick={() => setMenuOpen(false)}>SKILLS</a></li>
-            <li><a href="#experience" onClick={() => setMenuOpen(false)}>EXPERIENCE</a></li>
+            <li><a href="#training" onClick={() => setMenuOpen(false)}>TRAINING</a></li>
             <li><a href="#projects" onClick={() => setMenuOpen(false)}>PROJECTS</a></li>
             <li><a href="#certifications" onClick={() => setMenuOpen(false)}>CERTIFICATIONS</a></li>
             <li><a href="#achievements" onClick={() => setMenuOpen(false)}>ACHIEVEMENTS</a></li>
@@ -50,7 +50,7 @@ function App() {
       <main className="main-content">
         <Hero />
         <Skills />
-        <Experience />
+        <Training />
         <Projects />
         <Certifications />
         <Achievements />
